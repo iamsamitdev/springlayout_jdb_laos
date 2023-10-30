@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title layout:title-pattern="$CONTENT_TITLE | $LAYOUT_TITLE">Spring Boot App</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <!-- Menu -->
+    <div th:replace="frontend/fragments/menu::menu"></div>
+    <!-- Content -->
+    <div layout:fragment="content"></div>
+    <!-- Footer -->
+    <div th:replace="frontend/fragments/footer::footer"></div>
+
+    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>
